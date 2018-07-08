@@ -1,0 +1,14 @@
+/build/
+
+bin/
+bin-*/
+
+*.dll
+*.exe
+
+*.bak
+*.orig
+*.pyc
+Thumbs.db
+**.mtl
+.DS_Store
