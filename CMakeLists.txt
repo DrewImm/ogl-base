@@ -61,6 +61,8 @@ add_executable(ogl-base
 	ogl-base/oglbase.h
 	ogl-base/Kernel.cpp
 	ogl-base/Kernel.h
+	ogl-base/VBO.cpp
+	ogl-base/VBO.h
 )
 target_link_libraries(ogl-base
 	${ALL_LIBS}
