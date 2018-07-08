@@ -58,6 +58,9 @@ add_definitions(
 # User ogl-base
 add_executable(ogl-base 
 	ogl-base/ogl-base.cpp
+	ogl-base/oglbase.h
+	ogl-base/Kernel.cpp
+	ogl-base/Kernel.h
 )
 target_link_libraries(ogl-base
 	${ALL_LIBS}
