@@ -28,16 +28,35 @@ You will probably want your project and files to be called something other than 
 ./script/create-app {NEW_PROJECT_NAME}
 ```
 
-This will initialize a new git repo for you, and rename your app.  This will build your app for you
+This will initialize a new git repo for you, and rename your app.  Now you should build the app with CMake in the next steps.
 
-## Development Build
 
-If you would like to build this repo for development purposes without creating a new app, run
+## Build Makefile (Visual Studio)
+
+To build a solution for the latest version of Visual Studio (2017), run this.
 
 ```
 ./script/build
 ```
 
-## Build
+For older versions of Visual Studio, look on to the next section.
 
-You can now build your app by opening the project in build/
+
+## Build Makefile (Mac/Linux/Other)
+
+You must know your CMAKE Generator name.  You can find this by typing `cmake --help`, and it should look something like this (this example is for Eclipse MinGW):
+
+```
+Eclipse CDT4 - MinGW Makefiles
+```
+
+Now, remember (or copy & paste) that string into here (don't f*** up the double-quotes, please):
+
+```
+./script/build "CMAKE_GENERATOR_NAME"
+```
+
+
+## Build Binaries
+
+You can now build your app by opening the solution in `build/`
