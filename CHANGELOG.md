@@ -5,6 +5,7 @@
 ### Additions
 
 - [Documentation] - Created in-source Changelog
+- [Documentation] - Improved build documentation
 - Created rebuild script
 - Created clean script
 - CMake - Automatically generate source list
