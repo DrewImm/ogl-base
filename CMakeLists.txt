@@ -55,15 +55,13 @@ add_definitions(
 )
 
 
-# User ogl-base
-add_executable(ogl-base 
-	ogl-base/ogl-base.cpp
-	ogl-base/oglbase.h
-	ogl-base/Kernel.cpp
-	ogl-base/Kernel.h
-	ogl-base/VBO.cpp
-	ogl-base/VBO.h
+# ogl-base Executable
+file(GLOB source_files
+    "ogl-base/*.h"
+    "ogl-base/*.cpp"
 )
+add_executable(ogl-base ${source_files})
+
 target_link_libraries(ogl-base
 	${ALL_LIBS}
 )
