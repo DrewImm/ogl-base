@@ -1,8 +1,9 @@
 #!/bin/bash
 
+ARG1=${1:-"Visual Studio 15 2017"}
+
 # CMake
 mkdir build
 cd build
-cmake -G "Visual Studio 15 2017" ..
+cmake -g $ARG1 ..
 cd ..
-
